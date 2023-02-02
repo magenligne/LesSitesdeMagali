@@ -1,0 +1,135 @@
+body{
+  min-width: 340px;
+  padding: 0 5px 0 5px;
+}
+
+#ligneDuHaut {
+  /* background-color: orange; */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+#logo {
+  /* background-color: brown; */
+  padding: 0% 0% 0% 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+#logo img {
+  /* background-color: yellowgreen; */
+  margin: auto;
+  padding: 0%;
+  width: 60%;
+  height: 60%;
+}
+#menuDuHaut {
+  /* background-color: aqua; */
+  width: 100%;
+  height: auto;
+  padding-left: 0%;
+}
+#menuDuHaut li {
+  /* background-color: yellow; */
+  width: 50%;
+  align-items: center;
+  height: auto;
+  margin: 0px;
+  padding: 0%;
+  border-bottom: solid 2px #f2f2f2;
+}
+#menuDuHaut li:hover {
+  border-top: 0px;
+  border-bottom: solid 2px #0065fc;
+}
+#menuDuHaut a {
+  /* background-color: red; */
+  margin: 10px 0px 10px 0px;
+  width: auto;
+}
+
+.pourCentrerTablette {
+  /* background-color: pink; */
+  margin-left: 5px;
+  align-items: flex-start;
+}
+.recherche {
+  padding: 0%;
+  margin: 0%;
+}
+
+.filtresEtInfo {
+  /* background-color: coral; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#filtres {
+  background-color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0%;
+  color: unset;
+}
+#filtres h2 {
+  /* background-color: crimson; */
+  margin-left: 5px;
+}
+#filtres ul {
+  /* background-color: yellow; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding-left: 0%;
+  margin: 0%;
+}
+#filtres li {
+  padding: 0%;
+}
+#filtres a {
+  color: unset;
+}
+.info {
+  /* background-color: darkolivegreen; */
+  margin-left: 5px;
+}
+
+/* POPULAIRES */
+
+.populaires {
+  width: 100%;
+}
+
+.Fleche{
+  right:10px;
+}
+.cartesPop a{
+  width: 85%;
+}
+
+/* LOGEMENT VILLE */
+.card {
+  width: 300px;
+  height: 150px;
+}
+.divCartes {
+  justify-content: flex-start;
+}
+
+/* SECTION ACTIVITES */
+
+.cartesActivites {
+  flex-direction: column;
+  height: auto;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+/* FOOTER */
+.pourGris {
+  flex-direction: column;
+}
