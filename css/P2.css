@@ -92,15 +92,20 @@ h1 {
   color: white;
   margin: 20px;
   text-align: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 15px;
 }
 
 h2 {
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-  width: 40%;
-  box-shadow: 0px 0px 8px 5px yellowgreen;
+  color: white;
+  /* background-color: white; */
+  /* border-radius: 10px; */
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 15px;
+  /* width: 40%; */
+  /* box-shadow: 0px 0px 8px 5px yellowgreen; */
 }
 
 .listeSites {
@@ -137,9 +142,9 @@ h2 {
   box-shadow: 0 0px 8px 10px yellowgreen;
 }
 .card img {
-  border-radius: 25px 25px 0 0;
+  border-radius: 0 25px 0 0;
   object-fit: cover;
-  min-height: 60%;
+  max-height: 70%;
 }
 .textCard {
   display: flex;
