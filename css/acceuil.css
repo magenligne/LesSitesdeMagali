@@ -1,16 +1,16 @@
+@charset "UTF-8";
 /*styles généraux*/
-
 @font-face {
   font-family: PoliceP2;
   src: url("Raleway-Regular.ttf");
 }
-
 body {
   font-family: PoliceP2, Arial, Helvetica, sans-serif;
   max-width: 1700px;
   margin: auto;
   background-color: #ca9762;
 }
+
 #bloc {
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@ body {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -31,10 +32,10 @@ header {
 }
 
 /*Ligne du haut = logo et menu du haut*/
-#ligneDuHaut {
+.ligneDuHaut {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 150px;
   width: 100%;
 }
@@ -47,36 +48,44 @@ header {
   align-items: center;
   margin: 20px 0 0 20px;
 }
+
 #logo img {
-  width: 90%;
+  width: 80%;
   border-radius: 40px 10px 40px 10px;
-  box-shadow: 0px 0px 18px 15px yellowgreen;
+  box-shadow: 0px 0px 18px 5px yellowgreen;
+  padding: 10px;
+  background-color: yellowgreen;
 }
 
 #menuDuHaut {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 150px;
+  /* position: fixed;
+  margin-bottom: 200px;
+  background-color: rgba(202, 151, 98, 0.5);
+  box-shadow: 0px 0px 18px 15px rgba(202, 151, 98, 0.5); */
 }
+
 #menuDuHaut li {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-right: 40px;
 }
+
 #menuDuHaut a {
   display: block;
   color: white;
   font-weight: 800;
   font-size: 25px;
 }
+
 #menuDuHaut a:hover {
   color: #fffd48;
 }
 
 /*SECTION corps*/
-
 #corps {
   display: flex;
   flex-direction: column;
@@ -95,6 +104,10 @@ h1 {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 15px;
+}
+
+.imgordinature {
+  margin: 30px;
 }
 
 h2 {
@@ -119,6 +132,7 @@ h2 {
   flex-wrap: wrap;
   margin: 10px 10px 10px 0;
 }
+
 .listeSites a {
   /* background-color: aqua; */
   display: flex;
@@ -127,6 +141,7 @@ h2 {
   align-items: center;
   margin: 25px;
 }
+
 .card {
   background-color: white;
   display: flex;
@@ -138,14 +153,24 @@ h2 {
   width: 360px;
   height: 420px;
 }
+@media screen and (max-width: 885px) {
+  .card {
+    width: 160px;
+    height: 320px;
+  }
+}
+
 .card:hover {
   box-shadow: 0 0px 8px 10px yellowgreen;
 }
+
 .card img {
   border-radius: 0 25px 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-height: 70%;
 }
+
 .textCard {
   display: flex;
   flex-direction: column;
@@ -166,11 +191,13 @@ h2 {
   padding-top: 5px;
   padding-left: 10px;
 }
+
 .textCard p {
   font-size: 14px;
   padding-left: 10px;
   margin: 5px 0 0 0;
 }
+
 .textCard .skills {
   font-weight: 600;
 }
@@ -179,6 +206,7 @@ h2 {
   /* background-color: peru; */
   margin-top: 20px;
 }
+
 .lien a {
   color: white;
   font-weight: bold;
@@ -196,7 +224,9 @@ h2 {
   justify-content: flex-start;
   align-items: flex-start;
   align-items: baseline;
+  width: 100%;
 }
+
 .iconInfo {
   display: flex;
   justify-content: center;
@@ -208,12 +238,14 @@ h2 {
   width: 22px;
   margin: 5px;
 }
+
 i {
   /* background-color: purple; */
   margin: 0%;
   color: white;
   font-size: 12px;
 }
+
 .info p {
   /* background-color: green; */
   width: 85%;
@@ -221,11 +253,22 @@ i {
   font-size: 12px;
 }
 
+.retourhaut {
+  color: white;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+
+.retourhaut:hover {
+  color: #fffd48;
+}
+
 /*FOOTER*/
 footer {
   background-color: #f2f2f2;
   width: 100%;
 }
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -240,19 +283,32 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
 .piedDePage h3 {
   color: white;
   padding: 0%;
-  font-size: 20px;
+  font-size: 16px;
 }
+
 .piedDePage li {
   padding-bottom: 5px;
 }
+
 .piedDePage a {
   color: white;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 700;
 }
+
 .piedDePage a:hover {
   color: #fffd48;
 }
+
+.piedDePage i {
+  font-size: 40px;
+}
+
+.pourflex {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=acceuil.css.map */

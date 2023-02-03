@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/P2.css" />
+    <!-- <link rel="stylesheet" href="sass/acceuil.scss" /> -->
+    <link rel="stylesheet" href="css/acceuil.css" />
     <link
-      rel="stylesheet"
-      media="screen and (max-width: 991px)"
-      href="css/tablette.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 767px)"
-      href="css/desktop.css"
-    />
+    rel="stylesheet"
+    media="screen and (max-width: 885px)"
+    href="css/tablette.css"
+  />
+  <!-- <link
+    rel="stylesheet"
+    media="screen and (max-width: 885px)"
+    href="css/desktop.css"
+  /> -->
     <script
       src="https://kit.fontawesome.com/d4d5c38d7c.js"
       crossorigin="anonymous"
@@ -27,24 +28,28 @@
 
       <header>
         <!-- ligne du haut-->
-        <div id="ligneDuHaut">
-          <div id="logo">
-            <img src="images/profilGarlabanmagali.png" alt="logo Booki" />
-          </div>
+          <div class="ligneDuHaut">
+            <div id="logo">
+              <img src="images/profilGarlabanmagali.png" alt="logo Booki" />
+            </div>
+  
           <ul id="menuDuHaut">
             <li><a href="#Acceuil">Acceuil</a></li>
             <li><a href="#A propos">A propos</a></li>
           </ul>
+
         </div>
+
       </header>
 
       <section id="corps">
         <h1>Bienvenue sur Les Sites de Magali</h1>
-        <div><img src="images/ordiNature.jpg"></div>
+
+        <div class="imgordinature"><img src="images/ordiNature.jpg"></div>
         <h2>Sites 2022</h2>
 
         <div class="listeSites">
-          <a href="https://magenligne.github.io/Projet2/">
+          <a href="https://magenligne.github.io/Projet2/" target="_blank">
             <div class="card">
               <img src="images/BookiFolio.png" alt="Booki" />
               <div class="textCard">
@@ -60,7 +65,7 @@
             </div>
           </a>
 
-          <a href="https://magenligne.github.io/codeP3/ ">
+          <a href="https://magenligne.github.io/codeP3/ " target="_blank">
             <div class="card">
               <img src="images/myfood.png" alt="Ohmyfood" />
 
@@ -75,7 +80,7 @@
             </div>
           </a>
 
-          <a href="https://magenligne.github.io/Starting-website-2/">
+          <a href="https://magenligne.github.io/Starting-website-2/" target="_blank">
             <div class="card">
               <img src="images/PanthereFolio.png" alt="La Panthère" />
               <div class="textCard">
@@ -87,7 +92,7 @@
             </div>
           </a>
 
-          <a href="https://magenligne.github.io/Starting-website-2/">
+          <a href="https://magenligne.github.io/Starting-website-2/" target="_blank">
             <div class="card">
               <img src="images/Kasa.png" alt="La Panthère" />
               <div class="textCard">
@@ -145,31 +150,46 @@
             "Références OpenClassrooms" ci-dessous.
           </p>
         </div>
+
+        <!-- <div class="retourhaut"> -->
+<a class="retourhaut" href="" target ="_top">Retour haut de page </a>      
+  <!-- </div> -->
+
+
       </section>
 
       <footer>
         <div class="footer">
           <div class="piedDePage">
+            <h3>Scénarios Projet OpenClassrooms</h3>
+            <div class="pourflex">
             <ul>
-              <li><h3>Références OpenClassrooms</h3></li>
-              <li><a href="#">Booki </a></li>
-              <li><a href="#">OhMyFood</a></li>
-              <li><a href="#">La Panthère</a></li>
-              <li><a href="#">Kasa</a></li>
+            
+              <li><a href="pdf/DW P2 - Spécifications techniques et fonctionnelles - DW+P2+-+Specifications+techniques+et+fonctionnelles.pdf" target="_blank">Booki </a></li>
+              <li><a href="pdf/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf " target="_blank">OhMyFood</a></li>
+              <li><a href="pdf/P4 Optimisez un site web existant.pdf" target="_blank">La Panthère</a></li>
+            </ul>
+  
+            <ul>
+              <li><a href="pdf/DW+P5+-+Specifications+fonctionnelles.pdf" target="_blank">Kanap</a></li>
+              <li><a href="pdf/P7 -Créez une application web de location immobilière avec React .pdf" target="_blank">Kasa</a></li>
+              <li><a href="pdf/P6 spec.pdf" target="_blank">Hot Takes</a></li>
+            </ul>
+            </div>
+
+          </div>
+
+          <div class="piedDePage">
+            <ul>
+              <li><h3></h3></li>
+              <li><a href="https://www.linkedin.com/in/magonline/" target="_blank" ><i class="fa-brands fa-linkedin" alt="Linkedin"></i></a></li>
             </ul>
           </div>
 
           <div class="piedDePage">
             <ul>
-              <li><h3>Contact Linkedin</h3></li>
-              <li><a href="#">mon adresse</a></li>
-            </ul>
-          </div>
-
-          <div class="piedDePage">
-            <ul>
-              <li><h3>Github</h3></li>
-              <li><a href="#">mon adresse</a></li>
+              <li><h3></h3></li>
+              <li><a href="https://github.com/magenligne" target="_blank" ><i class="fa-brands fa-square-github" alt="Github"></i></a></li>
             </ul>
           </div>
         </div>
