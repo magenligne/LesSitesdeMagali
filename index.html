@@ -4,13 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <!-- <link rel="stylesheet" href="sass/acceuil.scss" /> -->
     <link rel="stylesheet" href="css/acceuil.css" />
-    <link
+    <!-- <link
     rel="stylesheet"
     media="screen and (max-width: 885px)"
     href="css/tablette.css"
-  />
+  /> -->
   <!-- <link
     rel="stylesheet"
     media="screen and (max-width: 885px)"
@@ -34,8 +33,8 @@
             </div>
   
           <ul id="menuDuHaut">
-            <li><a href="#Acceuil">Acceuil</a></li>
-            <li><a href="#A propos">A propos</a></li>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="aPropos.html">A propos</a></li>
           </ul>
 
         </div>
@@ -92,7 +91,7 @@
             </div>
           </a>
 
-          <a href="https://magenligne.github.io/Starting-website-2/" target="_blank">
+          <a href="https://lighthearted-cajeta-754d28.netlify.app/?utm_source=pocket_saves" target="_blank">
             <div class="card">
               <img src="images/Kasa.png" alt="La Panthère" />
               <div class="textCard">
@@ -100,43 +99,51 @@
                 <p>Locations de vacances</p>
                 <p class="skills">Skills: React.js</p>
                 <p class="skills">Outils: Create React App</p>
+               <!-- <a href="pdf/P7 -Créez une application web de location immobilière avec React .pdf" target="_blank">Lien du scénario</a> -->
+
               </div>
             </div>
           </a>
 
-          <a href="#">
+          <a id="lienHottakes" href="#HTEMsg">
             <div class="card">
               <img src="images/hotTakes.png" alt="hottakes" />
               <div class="textCard">
                 <h3>HOT TAKES<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p>Avis culinaire de sauces</p>
-                <p class="skills">
+                <p id="H0">Avis culinaire de sauces</p>
+                <p class="skills" id="skillsH1">
                   Skills: Parcours CRUD - Sécurité Top Ten OWASP
                 </p>
-                <p class="skills">
+                <p class="skills"  id="skillsH2">
                   Outils: Mongo DB - Postman
                 </p>
+                <p class="Msg" id="HTEMsg"></p>
+
               </div>
             </div>
           </a>
 
+
           
-          <a href="#">
+          <a id="lienKanap" href="#kanapMsg">
             <div class="card">
               <img src="images/KANAPFolio.png" alt="Kanap" />
               <div class="textCard">
                 <h3>KANAP<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p>Site e-commerce de vente de canapés</p>
-                <p class="skills">
+                <p id="K0">Site e-commerce de vente de canapés</p>
+                <p class="skills" id="skillsK1">
                   Skills: JavaScript - DOM - Requêtes
                 </p>
-                <p class="skills">
+                <p class="skills" id="skillsK2">
                   Outils: VS code - Live server - Inspecteur code - Validateur
                   3WC
                 </p>
+                <p class="Msg" id="kanapMsg"></p>
               </div>
             </div>
           </a>
+         
+
 
 
 
@@ -195,5 +202,6 @@
         </div>
       </footer>
     </div>
+    <script type="module"  src="./js/clickSitesBack.js"></script>
   </body>
 </html>
