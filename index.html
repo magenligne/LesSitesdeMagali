@@ -28,11 +28,13 @@
       <header>
         <!-- ligne du haut-->
           <div class="ligneDuHaut">
-            <div id="logo">
-              <img src="images/profilGarlabanmagali.png" alt="logo Booki" />
+            <div class="ligneDuHaut_logo">
+              <P>Les sites de Magali</P>
+              <!-- <img src="images/profilGarlabanmagali.png" alt="logo Booki" /> -->
+
             </div>
   
-          <ul id="menuDuHaut">
+          <ul class="ligneDuHaut_menuDuHaut">
             <li><a href="index.html">Acceuil</a></li>
             <li><a href="aPropos.html">A propos</a></li>
           </ul>
@@ -42,22 +44,25 @@
       </header>
 
       <section id="corps">
-        <h1>Bienvenue sur Les Sites de Magali</h1>
 
-        <div class="imgordinature"><img src="images/ordiNature.jpg"></div>
+        <div class="imgordinature">        
+          <h1>Bienvenue</h1>
+          <img src="images/ordiNature.jpg">
+        </div>
+
         <h2>Sites 2022</h2>
 
         <div class="listeSites">
           <a href="https://magenligne.github.io/Projet2/" target="_blank">
             <div class="card">
               <img src="images/BookiFolio.png" alt="Booki" />
-              <div class="textCard">
+              <div class="card_textCard">
                 <h3>BOOKI<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
                 <p>Recherche d'hébergement et d'activités par ville</p>
-                <p class="skills">
+                <p class="card_textCard_skills">
                   Skills: HTML5 - CSS3 - Responsive
                 </p>
-                <p class="skills">
+                <p class="card_textCard_skills">
                   Outils: VS code - Inspecteur - Validateur 3WC
                 </p>
               </div>
@@ -68,13 +73,13 @@
             <div class="card">
               <img src="images/myfood.png" alt="Ohmyfood" />
 
-              <div class="textCard">
+              <div class="card_textCard">
                 <h3>Oh My Food!<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
                 <p>Plateforme de restaurants gastronomiques</p>
-                <p class="skills">
+                <p class="card_textCard_skills">
                   Skills: SCSS - Nesting - Animations CSS - Design
                 </p>
-                <p class="skills">Outils: liveSass - Git</p>
+                <p class="card_textCard_skills">Outils: liveSass - Git</p>
               </div>
             </div>
           </a>
@@ -82,11 +87,11 @@
           <a href="https://magenligne.github.io/Starting-website-2/" target="_blank">
             <div class="card">
               <img src="images/PanthereFolio.png" alt="La Panthère" />
-              <div class="textCard">
+              <div class="card_textCard">
                 <h3>La Panthère<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
                 <p>Agence de Web Design</p>
-                <p class="skills">Skills: SEO - Accessibilité</p>
-                <p class="skills">Outils: Wave - Lighthouse</p>
+                <p class="card_textCard_skills">Skills: SEO - Accessibilité</p>
+                <p class="card_textCard_skills">Outils: Wave - Lighthouse</p>
               </div>
             </div>
           </a>
@@ -94,11 +99,11 @@
           <a href="https://lighthearted-cajeta-754d28.netlify.app/?utm_source=pocket_saves" target="_blank">
             <div class="card">
               <img src="images/Kasa.png" alt="La Panthère" />
-              <div class="textCard">
+              <div class="card_textCard">
                 <h3>Kasa <div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
                 <p>Locations de vacances</p>
-                <p class="skills">Skills: React.js</p>
-                <p class="skills">Outils: Create React App</p>
+                <p class="card_textCard_skills">Skills: React.js</p>
+                <p class="card_textCard_skills">Outils: Create React App</p>
                <!-- <a href="pdf/P7 -Créez une application web de location immobilière avec React .pdf" target="_blank">Lien du scénario</a> -->
 
               </div>
@@ -108,13 +113,13 @@
           <a id="lienHottakes" href="#HTEMsg">
             <div class="card">
               <img src="images/hotTakes.png" alt="hottakes" />
-              <div class="textCard">
+              <div class="card_textCard">
                 <h3>HOT TAKES<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
                 <p id="H0">Avis culinaire de sauces</p>
-                <p class="skills" id="skillsH1">
+                <p class="card_textCard_skills" id="skillsH1">
                   Skills: Parcours CRUD - Sécurité Top Ten OWASP
                 </p>
-                <p class="skills"  id="skillsH2">
+                <p class="card_textCard_skills"  id="skillsH2">
                   Outils: Mongo DB - Postman
                 </p>
                 <p class="Msg" id="HTEMsg"></p>
@@ -128,13 +133,13 @@
           <a id="lienKanap" href="#kanapMsg">
             <div class="card">
               <img src="images/KANAPFolio.png" alt="Kanap" />
-              <div class="textCard">
+              <div class="card_textCard">
                 <h3>KANAP<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
                 <p id="K0">Site e-commerce de vente de canapés</p>
-                <p class="skills" id="skillsK1">
+                <p class="card_textCard_skills" id="skillsK1">
                   Skills: JavaScript - DOM - Requêtes
                 </p>
-                <p class="skills" id="skillsK2">
+                <p class="card_textCard_skills" id="skillsK2">
                   Outils: VS code - Live server - Inspecteur code - Validateur
                   3WC
                 </p>
@@ -167,9 +172,9 @@
 
       <footer>
         <div class="footer">
-          <div class="piedDePage">
+          <div class="footer_piedDePage">
             <h3>Scénarios Projet OpenClassrooms</h3>
-            <div class="pourflex">
+            <div class="footer_piedDePage_pourflex">
             <ul>
             
               <li><a href="pdf/DW P2 - Spécifications techniques et fonctionnelles - DW+P2+-+Specifications+techniques+et+fonctionnelles.pdf" target="_blank">Booki </a></li>
@@ -186,14 +191,14 @@
 
           </div>
 
-          <div class="piedDePage">
+          <div class="footer_piedDePage">
             <ul>
               <li><h3></h3></li>
               <li><a href="https://www.linkedin.com/in/magonline/" target="_blank" ><i class="fa-brands fa-linkedin" alt="Linkedin"></i></a></li>
             </ul>
           </div>
 
-          <div class="piedDePage">
+          <div class="footer_piedDePage">
             <ul>
               <li><h3></h3></li>
               <li><a href="https://github.com/magenligne" target="_blank" ><i class="fa-brands fa-square-github" alt="Github"></i></a></li>
