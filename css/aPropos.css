@@ -4,6 +4,89 @@
   font-family: PoliceP2;
   src: url("Raleway-Regular.ttf");
 }
+@font-face {
+  font-family: PoliceGenerale;
+  src: url("/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
+.ligneDuHaut {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 150px;
+  width: 100%;
+  background-color: black;
+}
+.ligneDuHaut_logo {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 40px 10px 40px 10px;
+  box-shadow: 0px 0px 0px 5px yellowgreen;
+  padding: 10px;
+  background-color: white;
+}
+.ligneDuHaut_logo p {
+  text-align: center;
+  color: yellowgreen;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_logo p {
+    font-size: 15px;
+  }
+}
+.ligneDuHaut_menuDuHaut {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* position: fixed;
+  margin-bottom: 200px;
+  background-color: rgba(202, 151, 98, 0.5);
+  box-shadow: 0px 0px 18px 15px rgba(202, 151, 98, 0.5); */
+}
+.ligneDuHaut_menuDuHaut li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.ligneDuHaut_menuDuHaut a {
+  display: block;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_menuDuHaut a {
+    font-size: 15px;
+  }
+}
+.ligneDuHaut_menuDuHaut a:hover {
+  color: yellowgreen;
+}
+
+.retourhaut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  margin: 30px;
+  background-color: black;
+  box-shadow: 5px 10px 15px 3px rgb(90, 72, 60);
+  height: 30px;
+  border-radius: 25px;
+}
+
+.retourhaut:hover {
+  color: yellowgreen;
+}
+
 body {
   font-family: PoliceP2, Arial, Helvetica, sans-serif;
   max-width: 1700px;
@@ -32,59 +115,6 @@ header {
 }
 
 /*Ligne du haut = logo et menu du haut*/
-.ligneDuHaut {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 150px;
-  width: 100%;
-}
-
-#logo {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0 0 20px;
-}
-
-#logo img {
-  width: 80%;
-  border-radius: 40px 10px 40px 10px;
-  box-shadow: 0px 0px 18px 5px yellowgreen;
-  padding: 10px;
-  background-color: yellowgreen;
-}
-
-#menuDuHaut {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* position: fixed;
-  margin-bottom: 200px;
-  background-color: rgba(202, 151, 98, 0.5);
-  box-shadow: 0px 0px 18px 15px rgba(202, 151, 98, 0.5); */
-}
-
-#menuDuHaut li {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 40px;
-}
-
-#menuDuHaut a {
-  display: block;
-  color: white;
-  font-weight: 800;
-  font-size: 25px;
-}
-
-#menuDuHaut a:hover {
-  color: #fffd48;
-}
-
 /*SECTION corps*/
 #corps {
   display: flex;
@@ -104,26 +134,12 @@ h1 {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 15px;
-}
-
-.imgordinature {
-  margin: 30px;
-}
-
-h2 {
-  color: white;
-  /* background-color: white; */
-  /* border-radius: 10px; */
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 15px;
-  /* width: 40%; */
-  /* box-shadow: 0px 0px 8px 5px yellowgreen; */
+  text-shadow: 2px 2px 2px rgb(90, 72, 60);
 }
 
 .listeSites {
   background-color: #5a483c;
-  width: 95%;
+  width: 70%;
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -133,83 +149,19 @@ h2 {
   margin: 10px 10px 10px 0;
 }
 
-.listeSites a {
-  /* background-color: aqua; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 25px;
-}
-
-.card {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 0 25px;
-  border: 5px white solid;
-  box-shadow: 0px 0px 8px 5px rgb(189, 187, 187);
-  width: 360px;
-  height: 420px;
+.listeSites p {
+  font-size: 22px;
+  font-style: italic;
+  color: white;
+  margin: 40px;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  line-height: 1.5;
 }
 @media screen and (max-width: 885px) {
-  .card {
-    width: 160px;
-    height: 320px;
+  .listeSites p {
+    font-size: 18px;
   }
-}
-
-.card:hover {
-  box-shadow: 0 0px 8px 10px yellowgreen;
-}
-
-.card img {
-  border-radius: 0 25px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 70%;
-}
-
-.textCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 25%;
-  background-color: black;
-  padding: 1px 10px 20px 5px;
-  color: whitesmoke;
-  border-radius: 0 25px;
-}
-
-.textCard h3 {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  margin: 5px 5px 5px 0;
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
-.textCard p {
-  font-size: 14px;
-  padding-left: 10px;
-  margin: 5px 0 0 0;
-}
-
-.textCard .skills {
-  font-weight: 600;
-}
-
-.textCard a {
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.textCard a:hover {
-  color: #fffd48;
 }
 
 .lien {
