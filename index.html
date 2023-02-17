@@ -39,6 +39,42 @@
             <li><a href="aPropos.html">A propos</a></li>
           </ul>
 
+          <!-- menuHamburger -->
+          <nav class="hamburger" role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li><a href="index.html">Acceuil</a></li>
+            <li><a href="aPropos.html">A propos</a></li>
+                <!-- <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Info</li></a>
+                <a href="#"><li>Contact</li></a> -->
+                <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
+              </ul>
+            </div>
+          </nav>
+          <!-- fin hamburger -->
+
         </div>
 
       </header>
@@ -58,7 +94,7 @@
               <img src="images/BookiFolio.png" alt="Booki" />
               <div class="card_textCard">
                 <h3>BOOKI<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p>Recherche d'hébergement et d'activités par ville</p>
+                <p class="titre">Recherche d'hébergement et d'activités par ville</p>
                 <p class="card_textCard_skills">
                   Skills: HTML5 - CSS3 - Responsive
                 </p>
@@ -75,7 +111,7 @@
 
               <div class="card_textCard">
                 <h3>Oh My Food!<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p>Plateforme de restaurants gastronomiques</p>
+                <p class="titre">Plateforme de restaurants gastronomiques</p>
                 <p class="card_textCard_skills">
                   Skills: SCSS - Nesting - Animations CSS - Design
                 </p>
@@ -89,7 +125,7 @@
               <img src="images/PanthereFolio.png" alt="La Panthère" />
               <div class="card_textCard">
                 <h3>La Panthère<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p>Agence de Web Design</p>
+                <p class="titre">Agence de Web Design</p>
                 <p class="card_textCard_skills">Skills: SEO - Accessibilité</p>
                 <p class="card_textCard_skills">Outils: Wave - Lighthouse</p>
               </div>
@@ -101,7 +137,7 @@
               <img src="images/Kasa.png" alt="La Panthère" />
               <div class="card_textCard">
                 <h3>Kasa <div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p>Locations de vacances</p>
+                <p class="titre">Locations de vacances</p>
                 <p class="card_textCard_skills">Skills: React.js</p>
                 <p class="card_textCard_skills">Outils: Create React App</p>
                <!-- <a href="pdf/P7 -Créez une application web de location immobilière avec React .pdf" target="_blank">Lien du scénario</a> -->
@@ -115,7 +151,7 @@
               <img src="images/hotTakes.png" alt="hottakes" />
               <div class="card_textCard">
                 <h3>HOT TAKES<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p id="H0">Avis culinaire de sauces</p>
+                <p class="titre" id="H0">Avis culinaire de sauces</p>
                 <p class="card_textCard_skills" id="skillsH1">
                   Skills: Parcours CRUD - Sécurité Top Ten OWASP
                 </p>
@@ -135,7 +171,7 @@
               <img src="images/KANAPFolio.png" alt="Kanap" />
               <div class="card_textCard">
                 <h3>KANAP<div class="iconInfo"><i class="fa-solid fa-asterisk"></i></h3>
-                <p id="K0">Site e-commerce de vente de canapés</p>
+                <p class="titre" id="K0">Site e-commerce de vente de canapés</p>
                 <p class="card_textCard_skills" id="skillsK1">
                   Skills: JavaScript - DOM - Requêtes
                 </p>
@@ -159,7 +195,7 @@
           <p>
             Sites pédagogiques réalisés dans le cadre de la formation
             OpenClassrooms "Développeur Web". Sujets disponibles dans
-            "Références OpenClassrooms" ci-dessous.
+            "Scénarios OpenClassrooms" ci-dessous.
           </p>
         </div>
 
@@ -173,7 +209,7 @@
       <footer>
         <div class="footer">
           <div class="footer_piedDePage">
-            <h3>Scénarios Projet OpenClassrooms</h3>
+            <h3>Scénarios OpenClassrooms</h3>
             <div class="footer_piedDePage_pourflex">
             <ul>
             

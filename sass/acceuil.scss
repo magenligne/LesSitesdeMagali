@@ -3,7 +3,7 @@
 @import "police.scss";
 @import "ligneDuHaut.scss";
 @import "boutonRetourHaut.scss";
-
+// @import "menuHamburger.scss";
 body {
   font-family: PoliceGenerale, Arial, Helvetica, sans-serif;
   max-width: 1700px;
@@ -30,7 +30,9 @@ header {
 }
 
 /*Ligne du haut = logo et menu du haut*/
-
+.hamburger {
+  display: none;
+}
 /*SECTION corps*/
 
 #corps {
@@ -136,34 +138,44 @@ h2 {
     @media screen and (max-width: 885px) {
       height: 50%;
     }
-  }
+    &_skills {
+      font-size: 12px;
+      color: $cardShadow;
+      @media screen and (max-width: 885px) {
+        font-size: 10px;
+      }
+    }
 
-  & h3 {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    margin: 5px 5px 5px 0;
-    padding-top: 5px;
-    padding-left: 10px;
-  }
-  & p {
-    font-weight: 600;
-    text-align: left;
-    font-size: 14px;
-    padding-left: 10px;
-    margin: 5px 0 0 0;
-  }
+    & p {
+      font-weight: 600;
+      text-align: left;
+      padding-left: 10px;
+      margin: 5px 0 0 0;
+    }
 
-  & a {
-    color: $couleurPolice;
-    font-size: 14px;
-    font-weight: 700;
-    // border-radius: 25px;
+    & h3 {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      margin: 5px 5px 5px 0;
+      padding-top: 5px;
+      padding-left: 10px;
+    }
+
+    & a {
+      color: $couleurPolice;
+      font-size: 14px;
+      font-weight: 700;
+      // border-radius: 25px;
+    }
+    & a:hover {
+      color: $couleurLienHover;
+      // background-color: rgba(245,245,245,0.5);
+    }
   }
-  & a:hover {
-    color: $couleurLienHover;
-    // background-color: rgba(245,245,245,0.5);
-  }
+}
+.titre {
+  font-size: 15px;
 }
 
 .lien {
