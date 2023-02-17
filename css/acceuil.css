@@ -39,32 +39,40 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* position: fixed;
-  margin-bottom: 200px;
-  background-color: rgba(202, 151, 98, 0.5);
-  box-shadow: 0px 0px 18px 15px rgba(202, 151, 98, 0.5); */
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_menuDuHaut {
+    align-items: flex-start;
+    font-size: 18px;
+  }
 }
 .ligneDuHaut_menuDuHaut li {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 40px;
+  flex-direction: center;
+  justify-content: center;
+  margin: 10px;
 }
 .ligneDuHaut_menuDuHaut a {
   display: block;
   color: white;
   font-weight: 800;
   font-size: 25px;
+  padding: 15px;
+  border-radius: 40px 10px 40px 10px;
+  border: 3px solid white;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_menuDuHaut a {
     font-size: 15px;
+    border-color: yellowgreen;
   }
 }
 .ligneDuHaut_menuDuHaut a:hover {
   color: yellowgreen;
 }
-
+.ligneDuHaut_menuDuHaut a:active {
+  color: yellowgreen;
+}
 .retourhaut {
   display: flex;
   justify-content: center;
@@ -111,6 +119,10 @@ header {
 }
 
 /*Ligne du haut = logo et menu du haut*/
+.hamburger {
+  display: none;
+}
+
 /*SECTION corps*/
 #corps {
   display: flex;
@@ -217,7 +229,22 @@ h2 {
     height: 50%;
   }
 }
-.card h3 {
+.card_textCard_skills {
+  font-size: 12px;
+  color: rgb(189, 187, 187);
+}
+@media screen and (max-width: 885px) {
+  .card_textCard_skills {
+    font-size: 10px;
+  }
+}
+.card_textCard p {
+  font-weight: 600;
+  text-align: left;
+  padding-left: 10px;
+  margin: 5px 0 0 0;
+}
+.card_textCard h3 {
   display: flex;
   align-items: center;
   font-size: 20px;
@@ -225,20 +252,17 @@ h2 {
   padding-top: 5px;
   padding-left: 10px;
 }
-.card p {
-  font-weight: 600;
-  text-align: left;
-  font-size: 14px;
-  padding-left: 10px;
-  margin: 5px 0 0 0;
-}
-.card a {
+.card_textCard a {
   color: white;
   font-size: 14px;
   font-weight: 700;
 }
-.card a:hover {
+.card_textCard a:hover {
   color: yellowgreen;
+}
+
+.titre {
+  font-size: 15px;
 }
 
 .lien {

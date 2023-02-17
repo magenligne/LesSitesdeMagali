@@ -8,7 +8,7 @@
 @import "police.scss";
 @import "ligneDuHaut.scss";
 @import "boutonRetourHaut.scss";
-@import "menuHamburger.scss";
+// @import "menuHamburger.scss";
 
 body {
   font-family: PoliceP2, Arial, Helvetica, sans-serif;
@@ -62,7 +62,7 @@ h1 {
 
 .listeSites {
   background-color: #5a483c;
-  width: 70%;
+  width: 60%;
   border-radius: 25px;
   display: flex;
   flex-direction: row;

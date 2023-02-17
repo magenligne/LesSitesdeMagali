@@ -33,6 +33,7 @@
     color: $contour;
     font-weight: bold;
     font-size: 20px;
+    text-shadow: 2px 2px $fondFonce;
     @media screen and (max-width: 885px) {
       font-size: 15px;
     }
@@ -50,15 +51,9 @@
   }
   &_menuDuHaut li {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border-radius: 40px 10px 40px 10px;
-    border: 3px solid white;
+    flex-direction: center;
+    justify-content: center;
     margin: 10px;
-
-    & :hover {
-      border: 3px solid yellowgreen;
-    }
   }
   &_menuDuHaut a {
     display: block;
@@ -66,6 +61,9 @@
     font-weight: 800;
     font-size: 25px;
     padding: 15px;
+    border-radius: 40px 10px 40px 10px;
+    border: 3px solid $couleurLienHover;
+
     @media screen and (max-width: 885px) {
       font-size: 15px;
     }
