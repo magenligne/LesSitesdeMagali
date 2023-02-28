@@ -14,3 +14,7 @@
 .retourhaut:hover {
   color: $couleurLienHover;
 }
+.retourhaut:active {
+  background-color: white;
+  color: $couleurLienHover;
+}

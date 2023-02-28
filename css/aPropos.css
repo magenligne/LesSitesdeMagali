@@ -12,9 +12,16 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  height: 150px;
   width: 100%;
-  background-color: black;
+  background-image: linear-gradient(to bottom, transparent, #e1c2a0 99%), url("../images/ordiNature.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut {
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .ligneDuHaut_logo {
   width: 15%;
@@ -28,11 +35,20 @@
   padding: 10px;
   background-color: white;
 }
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_logo {
+    width: 25%;
+    margin: 10px;
+    padding: 5px;
+  }
+}
 .ligneDuHaut_logo p {
   text-align: center;
   color: yellowgreen;
   font-weight: bold;
   font-size: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px #5a483c;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_logo p {
@@ -43,6 +59,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0%;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_menuDuHaut {
@@ -60,21 +77,22 @@
   display: block;
   color: white;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   padding: 15px;
   border-radius: 40px 10px 40px 10px;
-  border: 3px solid white;
+  border: 3px solid yellowgreen;
+  background-color: black;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_menuDuHaut a {
     font-size: 15px;
-    border-color: yellowgreen;
   }
 }
 .ligneDuHaut_menuDuHaut a:hover {
   color: yellowgreen;
 }
 .ligneDuHaut_menuDuHaut a:active {
+  background-color: white;
   color: yellowgreen;
 }
 .retourhaut {
@@ -95,11 +113,16 @@
   color: yellowgreen;
 }
 
+.retourhaut:active {
+  background-color: white;
+  color: yellowgreen;
+}
+
 body {
   font-family: PoliceP2, Arial, Helvetica, sans-serif;
   max-width: 1700px;
   margin: auto;
-  background-color: #ca9762;
+  background-color: #e1c2a0;
 }
 
 #bloc {
@@ -137,12 +160,18 @@ h1 {
   font-size: 28px;
   font-style: italic;
   color: white;
-  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 0;
   text-align: center;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 15px;
   text-shadow: 2px 2px 2px rgb(90, 72, 60);
+}
+@media screen and (max-width: 885px) {
+  h1 {
+    font-size: 18px;
+  }
 }
 
 .listeSites {
@@ -155,6 +184,11 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   margin: 10px 10px 10px 0;
+}
+@media screen and (max-width: 885px) {
+  .listeSites {
+    width: 80%;
+  }
 }
 
 .listeSites p {

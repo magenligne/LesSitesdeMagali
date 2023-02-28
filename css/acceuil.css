@@ -8,9 +8,16 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  height: 150px;
   width: 100%;
-  background-color: black;
+  background-image: linear-gradient(to bottom, transparent, #e1c2a0 99%), url("../images/ordiNature.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 885px) {
+  .ligneDuHaut {
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .ligneDuHaut_logo {
   width: 15%;
@@ -24,11 +31,20 @@
   padding: 10px;
   background-color: white;
 }
+@media screen and (max-width: 885px) {
+  .ligneDuHaut_logo {
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+  }
+}
 .ligneDuHaut_logo p {
   text-align: center;
   color: yellowgreen;
   font-weight: bold;
   font-size: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px #5a483c;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_logo p {
@@ -39,6 +55,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0%;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_menuDuHaut {
@@ -56,21 +73,22 @@
   display: block;
   color: white;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   padding: 15px;
   border-radius: 40px 10px 40px 10px;
-  border: 3px solid white;
+  border: 3px solid yellowgreen;
+  background-color: black;
 }
 @media screen and (max-width: 885px) {
   .ligneDuHaut_menuDuHaut a {
     font-size: 15px;
-    border-color: yellowgreen;
   }
 }
 .ligneDuHaut_menuDuHaut a:hover {
   color: yellowgreen;
 }
 .ligneDuHaut_menuDuHaut a:active {
+  background-color: white;
   color: yellowgreen;
 }
 .retourhaut {
@@ -91,11 +109,16 @@
   color: yellowgreen;
 }
 
+.retourhaut:active {
+  background-color: white;
+  color: yellowgreen;
+}
+
 body {
   font-family: PoliceGenerale, Arial, Helvetica, sans-serif;
   max-width: 1700px;
   margin: auto;
-  background-color: #ca9762;
+  background-color: #e1c2a0;
 }
 
 #bloc {
@@ -116,11 +139,6 @@ a {
 /*HEADER*/
 header {
   width: 100%;
-}
-
-/*Ligne du haut = logo et menu du haut*/
-.hamburger {
-  display: none;
 }
 
 /*SECTION corps*/
@@ -150,6 +168,26 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
+}
+@media screen and (max-width: 885px) {
+  .imgordinature {
+    width: 85%;
+  }
+}
+.imgordinature img {
+  border: 2px solid yellowgreen;
+  border-radius: 25px;
+}
+@media screen and (max-width: 885px) {
+  .imgordinature img {
+    width: 99%;
+  }
+}
+@media screen and (max-width: 885px) {
+  .imgordinature h1 {
+    font-size: 20px;
+  }
 }
 
 h2 {
@@ -158,14 +196,25 @@ h2 {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 15px;
-  /* width: 40%; */
-  /* box-shadow: 0px 0px 8px 5px yellowgreen; */
+  margin: 40px 40px 0px 40px;
+}
+@media screen and (max-width: 885px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
-.listeSites {
+.subListeSites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #5a483c;
   width: 95%;
   border-radius: 25px;
+}
+
+.listeSites {
   display: flex;
   flex-direction: row;
   justify-content: center;

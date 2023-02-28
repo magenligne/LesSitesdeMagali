@@ -4,9 +4,16 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  height: 150px;
   width: 100%;
-  background-color: $fonfFooterEtTxtCard;
+  // background-image: url("../images/ordiNature.jpg");
+  background-image: linear-gradient(to bottom, transparent, $fondClair 99%),
+    url("../images/ordiNature.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @media screen and (max-width: 885px) {
+    justify-content: space-around;
+    align-items: center;
+  }
 
   &_logo {
     width: 15%;
@@ -15,25 +22,23 @@
     justify-content: center;
     align-items: center;
     margin: 20px;
-    // width: 80%;
     border-radius: 40px 10px 40px 10px;
     box-shadow: 0px 0px 0px 5px $contour;
     padding: 10px;
     background-color: $couleurPolice;
+    @media screen and (max-width: 885px) {
+      width: 25%;
+      margin: 10px;
+      padding: 5px;
+    }
   }
-  // &_logo img {
-  //   width: 80%;
-  //   border-radius: 40px 10px 40px 10px;
-  //   box-shadow: 0px 0px 18px 5px $contour;
-  //   padding: 10px;
-  //   background-color: $contour;
-  // }
   &_logo p {
     text-align: center;
     color: $contour;
     font-weight: bold;
     font-size: 20px;
-    text-shadow: 2px 2px $fondFonce;
+    font-style: italic;
+    text-shadow: 1px 1px $fondFonce;
     @media screen and (max-width: 885px) {
       font-size: 15px;
     }
@@ -43,9 +48,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0%;
     @media screen and (max-width: 885px) {
       align-items: flex-start;
-      // display: none;
       font-size: 18px;
     }
   }
@@ -59,11 +64,11 @@
     display: block;
     color: $couleurPolice;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 20px;
     padding: 15px;
     border-radius: 40px 10px 40px 10px;
     border: 3px solid $couleurLienHover;
-
+    background-color: black;
     @media screen and (max-width: 885px) {
       font-size: 15px;
     }
@@ -73,7 +78,9 @@
   }
 
   &_menuDuHaut a:active {
+    background-color: white;
     color: $couleurLienHover;
+
     @media screen and (max-width: 885px) {
     }
   }

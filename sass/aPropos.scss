@@ -14,7 +14,7 @@ body {
   font-family: PoliceP2, Arial, Helvetica, sans-serif;
   max-width: 1700px;
   margin: auto;
-  background-color: #ca9762;
+  background-color: $fondClair;
 }
 #bloc {
   display: flex;
@@ -52,12 +52,16 @@ h1 {
   font-size: 28px;
   font-style: italic;
   color: white;
-  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 0;
   text-align: center;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 15px;
   text-shadow: 2px 2px 2px rgb(90, 72, 60);
+  @media screen and (max-width: 885px) {
+    font-size: 18px;
+  }
 }
 
 .listeSites {
@@ -70,6 +74,9 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   margin: 10px 10px 10px 0;
+  @media screen and (max-width: 885px) {
+    width: 80%;
+  }
 }
 .listeSites p {
   font-size: 22px;
