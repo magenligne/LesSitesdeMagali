@@ -54,7 +54,6 @@
 @media screen and (max-width: 885px) {
   .ligneDuHaut_menuDuHaut {
     align-items: flex-start;
-    font-size: 18px;
   }
 }
 .ligneDuHaut_menuDuHaut li {
