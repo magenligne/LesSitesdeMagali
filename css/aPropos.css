@@ -112,7 +112,13 @@
   background-color: black;
   box-shadow: 5px 10px 15px 3px rgb(90, 72, 60);
   height: 30px;
-  border-radius: 25px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+@media screen and (max-width: 885px) {
+  .retourhaut {
+    font-size: 15px;
+  }
 }
 
 .retourhaut:hover {
@@ -163,7 +169,7 @@ header {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-style: italic;
   color: white;
   margin-top: 40px;
@@ -262,16 +268,6 @@ i {
   width: 85%;
   text-align: left;
   font-size: 12px;
-}
-
-.retourhaut {
-  color: white;
-  font-weight: bold;
-  margin: 20px 0 20px 0;
-}
-
-.retourhaut:hover {
-  color: #fffd48;
 }
 
 /*FOOTER*/

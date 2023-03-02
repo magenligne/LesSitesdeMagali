@@ -9,7 +9,13 @@
   background-color: black;
   box-shadow: 5px 10px 15px 3px rgb(90, 72, 60);
   height: 30px;
-  border-radius: 25px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+@media screen and (max-width: 885px) {
+  .retourhaut {
+    font-size: 15px;
+  }
 }
 
 .retourhaut:hover {
