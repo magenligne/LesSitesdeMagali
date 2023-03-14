@@ -27,6 +27,12 @@
     box-shadow: 0px 0px 0px 5px $contour;
     padding: 10px;
     background-color: $couleurPolice;
+    // position: relative;
+    // top: 40px;
+    // animation: 3s apparition;
+    // animation-fill-mode: forwards;
+    // animation-timing-function: ease-in-out;
+
     @media screen and (max-width: 885px) {
       width: 55%;
       margin: 10px;
